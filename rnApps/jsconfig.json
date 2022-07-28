@@ -1,0 +1,15 @@
+// {
+//   "compilerOptions": {
+//     "jsx": "react-native",
+//     "target": "es6",
+//     "module": "es6",
+//     "experimentalDecorators": true,
+//     "allowSyntheticDefaultImports": true,
+//     "moduleResolution": "node",
+//     "baseUrl": "./",
+//     "paths": {
+//       "~/*": ["src/*"]
+//     }
+//   },
+//   "exclude": ["node_modules"]
+// }

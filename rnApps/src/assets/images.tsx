@@ -1,3 +1,3 @@
 export default {
-  homeLogo: () => require(''),
+  homeLogo: () => require('~/assets/images/homeLogo.jpeg'),
 };
