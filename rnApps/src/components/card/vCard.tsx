@@ -54,8 +54,9 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     justifyContent: 'space-between',
     borderRadius: 5,
-    elevation: 50,
+    elevation: 5,
     padding: 16,
+    margin: 10,
   },
   image: {},
   bottomContainer: {

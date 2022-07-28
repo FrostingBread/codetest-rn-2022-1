@@ -53,8 +53,9 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-start',
     backgroundColor: 'white',
     borderRadius: 5,
-    elevation: 50,
+    elevation: 5,
     padding: 16,
+    margin: 10,
   },
   image: {flex: 5, marginRight: 12},
   rightContainer: {

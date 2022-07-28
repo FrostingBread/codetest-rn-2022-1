@@ -4,6 +4,7 @@ import {SafeAreaView, StyleSheet, Text, TextInput, View} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import Snackbar from 'react-native-snackbar';
 import AppBar from '~/components/general/appBar';
+import {Colors} from '~/configure/theme';
 import {AppContext, IAppContext} from '~/provider/appsContextProvider';
 import RootStackParamList from '~/route/routeType';
 
@@ -61,7 +62,7 @@ class LoginScreen extends React.Component<Props, State> {
         });
         throw e;
       }
-    } catch (e) {
+    } catch (e: any) {
       Snackbar.show({
         text: e.toString(),
         duration: Snackbar.LENGTH_LONG,
@@ -137,6 +138,7 @@ const styles = StyleSheet.create({
   label: {
     alignSelf: 'flex-start',
     marginHorizontal: 12,
+    color: Colors.lightDark,
   },
   textFieldUserName: {
     height: 40,
@@ -144,6 +146,7 @@ const styles = StyleSheet.create({
     width: 300,
     borderWidth: 1,
     padding: 10,
+    color: Colors.lightDark,
   },
 
   textFieldPassword: {
@@ -152,6 +155,7 @@ const styles = StyleSheet.create({
     width: 300,
     borderWidth: 1,
     padding: 10,
+    color: Colors.lightDark,
   },
   submitBT: {
     borderWidth: 1,

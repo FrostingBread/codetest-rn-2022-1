@@ -5,7 +5,6 @@ const storeUserSession = async (value: string) => {
     await AsyncStorage.setItem('loginCred', value).catch(() => {
       throw 'Cannot save credential';
     });
-    console.log('save', value);
     return true;
   } catch (e) {
     throw e;
@@ -15,7 +14,6 @@ const storeUserSession = async (value: string) => {
 const readUserSession = async (): Promise<string | null> => {
   try {
     const value = await AsyncStorage.getItem('loginCred');
-    console.log('get', value);
     return value;
   } catch (e) {
     return null;

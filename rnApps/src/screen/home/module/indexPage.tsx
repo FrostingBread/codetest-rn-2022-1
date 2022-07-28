@@ -2,7 +2,9 @@ import {StackScreenProps} from '@react-navigation/stack';
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import FastImage from 'react-native-fast-image';
+
 import Images from '~/assets/images';
+import {Colors} from '~/configure/theme';
 import RootStackParamList from '~/route/routeType';
 
 type Props = {navigation: StackScreenProps<RootStackParamList>['navigation']};
@@ -15,7 +17,7 @@ const IndexPage: React.FC<Props> = (props: Props) => {
       <FastImage style={styles.image} source={Images.homeLogo()} />
       <TouchableOpacity onPress={loginOC}>
         <View style={styles.button}>
-          <Text>Login</Text>
+          <Text style={styles.buttonText}>Login</Text>
         </View>
       </TouchableOpacity>
     </View>
@@ -28,6 +30,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   image: {height: 80, width: 80, margin: 12},
+  buttonText: {color: Colors.lightDark},
   button: {
     borderWidth: 1,
     paddingVertical: 8,

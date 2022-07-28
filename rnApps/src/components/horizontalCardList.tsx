@@ -13,7 +13,7 @@ const HorizontalCardList: React.FC<Props> = (props: Props) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Assessments</Text>
-      <View style={[styles.cardContainer, {height: height}]}>
+      <View style={[styles.cardContainer, {height: height + 20}]}>
         {data != null && data.length > 0 ? (
           <FlatList
             data={data}
@@ -21,7 +21,6 @@ const HorizontalCardList: React.FC<Props> = (props: Props) => {
               <HorizontalCard height={height} item={item} />
             )}
             keyExtractor={(item, index) => index.toString()}
-            ItemSeparatorComponent={() => <View style={{padding: 10}}></View>}
             horizontal={true}
             showsHorizontalScrollIndicator={false}
             style={styles.flatList}

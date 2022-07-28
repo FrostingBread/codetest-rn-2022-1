@@ -12,7 +12,7 @@ const ExitButton: React.FC<Props> = (props: Props) => {
   return (
     <TouchableOpacity onPress={() => props.navigation.goBack()}>
       <View style={styles.container}>
-        <Icon name="close" size={30} />
+        <Icon name="close" size={30} color={'#000'} />
       </View>
     </TouchableOpacity>
   );
@@ -20,8 +20,8 @@ const ExitButton: React.FC<Props> = (props: Props) => {
 const styles = StyleSheet.create({
   text: {fontSize: 26},
   container: {
-    height: 60,
-    width: 60,
+    height: 50,
+    width: 50,
     justifyContent: 'center',
     alignItems: 'center',
   },
