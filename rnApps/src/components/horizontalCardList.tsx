@@ -1,14 +1,16 @@
 import React from 'react';
 import {FlatList, StyleSheet, Text, View} from 'react-native';
-import {assessmentData} from '~/configure/conf';
 import {Colors} from '~/configure/theme';
+import IAssessmentData from '~/model/assessmentData';
 import HorizontalCard from './card/hCard';
 
-type Props = {};
+type Props = {
+  data: IAssessmentData[] | null[];
+};
 //using Flatlist
 const HorizontalCardList: React.FC<Props> = (props: Props) => {
   const height = 180;
-  const data = assessmentData;
+  const {data} = props;
 
   return (
     <View style={styles.container}>

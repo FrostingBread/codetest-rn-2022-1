@@ -1,0 +1,451 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Assessment point 0 1`] = `
+<View
+  style={
+    Object {
+      "marginHorizontal": 20,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#333",
+        "fontSize": 20,
+        "fontWeight": "700",
+        "paddingVertical": 10,
+      }
+    }
+  >
+    Assessments
+  </Text>
+  <View
+    style={
+      Array [
+        Object {},
+        Object {
+          "height": 200,
+        },
+      ]
+    }
+  >
+    <RCTScrollView
+      data={
+        Array [
+          Object {
+            "image": "https://via.placeholder.com/150\\"",
+            "name": "Assessment B",
+            "point": 0,
+          },
+        ]
+      }
+      getItem={[Function]}
+      getItemCount={[Function]}
+      horizontal={true}
+      keyExtractor={[Function]}
+      onContentSizeChange={[Function]}
+      onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      removeClippedSubviews={false}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      showsHorizontalScrollIndicator={false}
+      stickyHeaderIndices={Array []}
+      style={
+        Object {
+          "paddingVertical": 10,
+        }
+      }
+      viewabilityConfigCallbackPairs={Array []}
+    >
+      <View>
+        <View
+          onLayout={[Function]}
+          style={
+            Array [
+              Object {
+                "flexDirection": "row",
+              },
+              null,
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 150,
+                  "width": 300,
+                },
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "white",
+                  "borderRadius": 5,
+                  "elevation": 5,
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "margin": 10,
+                  "padding": 16,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 5,
+                  "marginRight": 12,
+                }
+              }
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "overflow": "hidden",
+                    },
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    },
+                  ]
+                }
+              >
+                <FastImageView
+                  resizeMode="cover"
+                  source={
+                    Object {
+                      "uri": "https://via.placeholder.com/150\\"",
+                    }
+                  }
+                  style={
+                    Object {
+                      "bottom": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    }
+                  }
+                />
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 6,
+                  "flexDirection": "column",
+                  "justifyContent": "space-between",
+                }
+              }
+            >
+              <Text
+                ellipsizeMode="tail"
+                numberOfLines={3}
+                style={
+                  Object {
+                    "color": "#333",
+                    "fontSize": 16,
+                    "fontWeight": "bold",
+                  }
+                }
+              >
+                Assessment B
+              </Text>
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                  }
+                }
+              >
+                <Text
+                  ellipsizeMode="tail"
+                  numberOfLines={2}
+                  style={
+                    Object {
+                      "color": "#999",
+                      "flex": 1,
+                      "fontSize": 14,
+                      "paddingRight": 4,
+                    }
+                  }
+                >
+                  Earn up to
+                  <Text
+                    style={
+                      Object {
+                        "color": "#3675d9",
+                        "fontWeight": "700",
+                      }
+                    }
+                  >
+                     
+                    0
+                     
+                  </Text>
+                  pts
+                </Text>
+                <Text
+                  allowFontScaling={false}
+                  selectable={false}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#921932",
+                        "fontSize": 18,
+                      },
+                      Object {
+                        "alignSelf": "flex-end",
+                      },
+                      Object {
+                        "fontFamily": "anticon",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</View>
+`;
+
+exports[`test Assessment point 999999 1`] = `
+<View
+  style={
+    Object {
+      "marginHorizontal": 20,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#333",
+        "fontSize": 20,
+        "fontWeight": "700",
+        "paddingVertical": 10,
+      }
+    }
+  >
+    Assessments
+  </Text>
+  <View
+    style={
+      Array [
+        Object {},
+        Object {
+          "height": 200,
+        },
+      ]
+    }
+  >
+    <RCTScrollView
+      data={
+        Array [
+          Object {
+            "image": "https://via.placeholder.com/150\\"",
+            "name": "Assessment A",
+            "point": 99999999,
+          },
+        ]
+      }
+      getItem={[Function]}
+      getItemCount={[Function]}
+      horizontal={true}
+      keyExtractor={[Function]}
+      onContentSizeChange={[Function]}
+      onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      removeClippedSubviews={false}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      showsHorizontalScrollIndicator={false}
+      stickyHeaderIndices={Array []}
+      style={
+        Object {
+          "paddingVertical": 10,
+        }
+      }
+      viewabilityConfigCallbackPairs={Array []}
+    >
+      <View>
+        <View
+          onLayout={[Function]}
+          style={
+            Array [
+              Object {
+                "flexDirection": "row",
+              },
+              null,
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 150,
+                  "width": 300,
+                },
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "white",
+                  "borderRadius": 5,
+                  "elevation": 5,
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "margin": 10,
+                  "padding": 16,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 5,
+                  "marginRight": 12,
+                }
+              }
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "overflow": "hidden",
+                    },
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    },
+                  ]
+                }
+              >
+                <FastImageView
+                  resizeMode="cover"
+                  source={
+                    Object {
+                      "uri": "https://via.placeholder.com/150\\"",
+                    }
+                  }
+                  style={
+                    Object {
+                      "bottom": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    }
+                  }
+                />
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 6,
+                  "flexDirection": "column",
+                  "justifyContent": "space-between",
+                }
+              }
+            >
+              <Text
+                ellipsizeMode="tail"
+                numberOfLines={3}
+                style={
+                  Object {
+                    "color": "#333",
+                    "fontSize": 16,
+                    "fontWeight": "bold",
+                  }
+                }
+              >
+                Assessment A
+              </Text>
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                  }
+                }
+              >
+                <Text
+                  ellipsizeMode="tail"
+                  numberOfLines={2}
+                  style={
+                    Object {
+                      "color": "#999",
+                      "flex": 1,
+                      "fontSize": 14,
+                      "paddingRight": 4,
+                    }
+                  }
+                >
+                  Earn up to
+                  <Text
+                    style={
+                      Object {
+                        "color": "#3675d9",
+                        "fontWeight": "700",
+                      }
+                    }
+                  >
+                     
+                    99999999
+                     
+                  </Text>
+                  pts
+                </Text>
+                <Text
+                  allowFontScaling={false}
+                  selectable={false}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#921932",
+                        "fontSize": 18,
+                      },
+                      Object {
+                        "alignSelf": "flex-end",
+                      },
+                      Object {
+                        "fontFamily": "anticon",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</View>
+`;

@@ -4,6 +4,7 @@ import {SafeAreaView, StyleSheet, View} from 'react-native';
 import AppBar from '~/components/general/appBar';
 import HorizontalCardList from '~/components/horizontalCardList';
 import VerticalCardList from '~/components/verticalCardList';
+import {assessmentData, challengesData} from '~/configure/conf';
 import RootStackParamList from '~/route/routeType';
 
 type Props = {navigation: StackScreenProps<RootStackParamList>['navigation']};
@@ -13,8 +14,8 @@ const HomePage: React.FC<Props> = (props: Props) => {
     <SafeAreaView style={{flex: 1}}>
       <AppBar {...props} />
       <View style={styles.container}>
-        <HorizontalCardList />
-        <VerticalCardList />
+        <HorizontalCardList data={assessmentData} />
+        <VerticalCardList data={challengesData} />
       </View>
     </SafeAreaView>
   );

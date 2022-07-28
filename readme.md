@@ -38,6 +38,13 @@ Password:
 
 > test
 
+## run test
+```bash
+npm test
+```
+
+
+
 ---
 
 26/7/2022 - Jackie Cheung

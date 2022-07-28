@@ -3,15 +3,18 @@ import {Dimensions, StyleSheet, Text, View} from 'react-native';
 import Carousel from 'react-native-reanimated-carousel';
 import {challengesData} from '~/configure/conf';
 import {Colors} from '~/configure/theme';
+import IChallengeData from '~/model/challengeData';
 import VerticalCard from './card/vCard';
 
-type Props = {};
+type Props = {
+  data: IChallengeData[] | null[];
+};
 //using Carousel
 const VerticalCardList: React.FC<Props> = (props: Props) => {
   const cheight = 420;
   const cheightFactor = 2.7;
   const cWidth = Dimensions.get('screen').width - 40;
-  const data = challengesData;
+  const {data} = props;
 
   return (
     <View style={styles.container}>
