@@ -1,6 +1,6 @@
-interface User {
-  firstName: String;
-  lastName: String;
+interface IUser {
+  firstName: string;
+  lastName: string;
   uid: number;
 }
-export default User;
+export default IUser;

@@ -1,7 +1,7 @@
-interface ChallengeData {
-  name: String;
-  image: String;
+interface IChallengeData {
+  name: string;
+  image: string;
   dueDate: Date;
   point: number;
 }
-export default ChallengeData;
+export default IChallengeData;

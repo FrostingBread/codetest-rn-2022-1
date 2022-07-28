@@ -1,7 +1,6 @@
-interface AssessmentData {
-  name: String;
-  image: String;
-  dueDate: Date;
+interface IAssessmentData {
+  name: string;
+  image: string;
   point: number;
 }
-export default AssessmentData;
+export default IAssessmentData;

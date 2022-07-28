@@ -5,11 +5,11 @@ import {
 } from '@react-navigation/stack';
 
 import * as React from 'react';
-import HomeScreen from '../screen/home/home';
+import HomeScreen from '~/screen/home/home';
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import LoginScreen from '../screen/login/login';
-import RootStackParamList from './routeType';
-import CustomDrawerContent from '~/components/drawer';
+import LoginScreen from '~/screen/login/login';
+import RootStackParamList from '~/route/routeType';
+import CustomDrawerContent from '~/components/general/drawer';
 
 const RootStack: React.FC = (props: any) => {
   const Stack = createStackNavigator<RootStackParamList>();

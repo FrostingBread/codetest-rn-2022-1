@@ -2,19 +2,21 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const storeUserSession = async (value: string) => {
   try {
-    await AsyncStorage.setItem('loginSession', value);
+    await AsyncStorage.setItem('loginCred', value).catch(() => {
+      throw 'Cannot save credential';
+    });
+    console.log('save', value);
     return true;
   } catch (e) {
-    return false;
+    throw e;
   }
 };
 
-const readUserSession = async () => {
+const readUserSession = async (): Promise<string | null> => {
   try {
-    const value = await AsyncStorage.getItem('loginSession');
-    if (value !== null) {
-      return value;
-    }
+    const value = await AsyncStorage.getItem('loginCred');
+    console.log('get', value);
+    return value;
   } catch (e) {
     return null;
   }

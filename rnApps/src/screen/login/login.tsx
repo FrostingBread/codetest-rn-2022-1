@@ -3,7 +3,7 @@ import React from 'react';
 import {SafeAreaView, StyleSheet, Text, TextInput, View} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import Snackbar from 'react-native-snackbar';
-import AppBar from '~/components/appBar';
+import AppBar from '~/components/general/appBar';
 import {AppContext, IAppContext} from '~/provider/appsContextProvider';
 import RootStackParamList from '~/route/routeType';
 
@@ -16,8 +16,8 @@ type Props = {
   navigation: StackScreenProps<RootStackParamList>['navigation'];
 };
 type State = {
-  username: String | null;
-  password: String | null;
+  username: string | null;
+  password: string | null;
   usernameFieldStatus: FieldStatus;
   passwordFieldStatus: FieldStatus;
 };
@@ -35,7 +35,7 @@ class LoginScreen extends React.Component<Props, State> {
     this.setState({[inputName]: value});
   }
 
-  onSubmit(context: IAppContext) {
+  async onSubmit(context: IAppContext) {
     let status = FieldStatus.normal;
     try {
       //Field validation
@@ -52,7 +52,7 @@ class LoginScreen extends React.Component<Props, State> {
       }
 
       try {
-        context.loginFC(this.state.username, this.state.password) &&
+        (await context.loginFC(this.state.username, this.state.password)) &&
           this.props.navigation.goBack();
       } catch (e) {
         this.setState({
